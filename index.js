@@ -1,10 +1,10 @@
 (async () => {
+  const elem = document.querySelector("#status-text");
   if (!("ComputePressureObserver" in window)) {
     elem.innerText = "not available";
     elem.classList.add("disabled")
     return;
   }
-  const elem = document.querySelector("#status-text");
   elem.innerText = "enabled";
   elem.classList.add("enabled")
 
