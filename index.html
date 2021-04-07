@@ -1,0 +1,53 @@
+<!doctype html><html lang="en">
+  <head>
+    <title>Compute Pressure API Demo</title>
+    <meta http-equiv="origin-trial"
+          content="A66sMT9qbGlLpGWUvICvdTcFtpsPw/RXZFJJnLQOxUQLLrmbs+TcqRW1ze1frCLAftVfg+Kzyp99u9un4Fd0dwEAAABXeyJvcmlnaW4iOiAiaHR0cDovL2xvY2FsaG9zdDo4MDAwIiwgImZlYXR1cmUiOiAiQ29tcHV0ZVByZXNzdXJlIiwgImV4cGlyeSI6IDE2MjEzNTg2NDF9" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <style type="text/css" media="screen">
+      table {
+          border-collapse: collapse;
+      }
+      table, th, td {
+          border: 1px solid #DDD;
+      }
+      th, td {
+          padding: 0 0.5em;
+      }
+      #contents {
+        margin: 0 10em;
+      }
+      #status {
+        margin-bottom: 1em;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .enabled {
+        color: green;
+      }
+      .disabled {
+        color: red;
+      }
+    </style>
+    <section id="contents">
+      <h1>Compute Pressure API Demo</h1>
+      <div id="status">
+        <label>API Status:</label> <span id="status-text"></span>
+      </div>
+      <table id="updates">
+        <thead>
+          <tr>
+            <th>Seconds since last update</th>
+            <th>CPU Utilization</th>
+            <th>CPU Speed</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
