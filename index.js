@@ -47,6 +47,6 @@
     refreshTable();
   }
   const obs = new ComputePressureObserver(onupdate, {cpuUtilizationThresholds: [0.5, 0.25], testMode: true});
-  await obs.start();
+  await obs.observe();
   window.obs = obs;
 })();
