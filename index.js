@@ -46,7 +46,8 @@
     updates.push({data, timestamp: Date.now()});
     refreshTable();
   }
-  const obs = new ComputePressureObserver(onupdate, {cpuUtilizationThresholds: [0.5, 0.25], testMode: true});
+  const obs = new ComputePressureObserver(onupdate, {cpuUtilizationThresholds: [0.5, 0.25],
+                                                     cpuSpeedThresholds: [0.5]});
   await obs.observe();
   window.obs = obs;
 })();
